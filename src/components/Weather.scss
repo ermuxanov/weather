@@ -1,0 +1,133 @@
+.weather {
+  max-width: 1400px;
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #3488c1 0%, #a5d9f3 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  overflow: hidden;
+  &__left {
+    width: 65%;
+    height: 100%;
+    padding: 50px 0 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-title {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    &-degree {
+      font-size: 120px;
+      font-weight: 500;
+      line-height: 0.8;
+    }
+    &-block {
+      display: flex;
+      gap: 40px;
+      align-items: flex-end;
+    }
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      &:last-child{
+        align-items: center;
+      }
+    }
+    &-icon {
+      width: 50px;
+    }
+    &-country {
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+  &__right {
+    width: 35%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding-left: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-form {
+      display: flex;
+      align-items: flex-end;
+      gap: 30px;
+    }
+    &-input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      transition: 0.3s;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      &:focus {
+        border-bottom: 1px solid #fff;
+      }
+    }
+    &-search {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      background: #a5d9f3;
+    }
+    &-countries {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 30px;
+      margin-right: 50px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    &-country {
+      color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: 0.3s;
+      @media (hover: hover) {
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding-bottom: 20px;
+      margin-right: 50px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    &-heading {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &-details {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &-detail {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      span {
+        font-weight: 500;
+        &:first-child {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        &:last-child {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
