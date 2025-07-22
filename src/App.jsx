@@ -1,5 +1,5 @@
-import Weather from "./components/weather.jsx";
-import "./app.scss";
+import Weather from "./components/Weather.jsx";
+import "./App.scss";
 
 const App = () => {
   return (
