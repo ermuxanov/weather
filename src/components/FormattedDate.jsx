@@ -1,6 +1,6 @@
 const FormattedDate = ({ timezone }) => {
   const utcNow = Date.now();
-  const offset = 5 * 60 * 60 * 1000;
+  const offset = 5 * 60 * 60;
   const localTime = new Date(utcNow + (timezone - offset) * 1000);
 
   const options = { weekday: "long" };
